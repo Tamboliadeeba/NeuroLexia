@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Ship</title>
+  <defs>
+    <linearGradient id="ship_hull" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4488ee"/>
+      <stop offset="100%" stop-color="#1144aa"/>
+    </linearGradient>
+    <linearGradient id="ship_sail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ddeeff"/>
+    </linearGradient>
+    <linearGradient id="ship_sail2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffdd55"/>
+      <stop offset="100%" stop-color="#ff8800"/>
+    </linearGradient>
+    <linearGradient id="ship_mast" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b3a1b"/>
+      <stop offset="100%" stop-color="#8b5a2b"/>
+    </linearGradient>
+  </defs>
+  <!-- Water waves -->
+  <path d="M60,390 Q120,375 180,390 Q240,405 300,390 Q360,375 420,390 Q460,400 460,400 L460,460 L60,460 Z" fill="#2255aa" stroke="#1a1a2e" stroke-width="2.5"/>
+  <path d="M60,395 Q120,382 180,395 Q240,408 300,395 Q360,382 420,395" fill="none" stroke="#55aaff" stroke-width="2" opacity="0.5"/>
+  <!-- Hull -->
+  <path d="M140,390 L130,430 Q130,448 150,448 L362,448 Q382,448 382,430 L372,390 Z" fill="url(#ship_hull)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Hull highlight -->
+  <rect x="145" y="400" width="222" height="12" rx="3" fill="white" opacity="0.2"/>
+  <!-- Hull stripe -->
+  <rect x="135" y="412" width="242" height="8" rx="3" fill="#ff3344" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Deck -->
+  <rect x="130" y="380" width="252" height="18" rx="8" fill="#f0d080" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Mast center -->
+  <rect x="250" y="145" width="12" height="240" rx="5" fill="url(#ship_mast)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Main sail (white) -->
+  <path d="M262,155 L340,210 L340,350 L262,350 Z" fill="url(#ship_sail)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Sail details -->
+  <line x1="262" y1="230" x2="338" y2="240" stroke="#aabbcc" stroke-width="2"/>
+  <line x1="262" y1="295" x2="338" y2="305" stroke="#aabbcc" stroke-width="2"/>
+  <!-- Second sail (yellow) -->
+  <path d="M250,160 L172,230 L172,345 L250,345 Z" fill="url(#ship_sail2)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Sail stripe detail -->
+  <line x1="250" y1="250" x2="174" y2="260" stroke="#cc6600" stroke-width="2" opacity="0.6"/>
+  <!-- Top flag -->
+  <path d="M256,145 L295,130 L295,155 Z" fill="#ff3344" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Porthole windows -->
+  <circle cx="185" cy="410" r="16" fill="#aaddff" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="185" cy="410" r="8" fill="#5599cc"/>
+  <circle cx="182" cy="407" r="4" fill="white" opacity="0.5"/>
+  <circle cx="256" cy="410" r="16" fill="#aaddff" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="256" cy="410" r="8" fill="#5599cc"/>
+  <circle cx="253" cy="407" r="4" fill="white" opacity="0.5"/>
+  <circle cx="327" cy="410" r="16" fill="#aaddff" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="327" cy="410" r="8" fill="#5599cc"/>
+  <circle cx="324" cy="407" r="4" fill="white" opacity="0.5"/>
+  <!-- Crow's nest -->
+  <rect x="238" y="145" width="36" height="20" rx="4" fill="#8b5a2b" stroke="#1a1a2e" stroke-width="3"/>
+</svg>

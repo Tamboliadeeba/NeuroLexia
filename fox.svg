@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Fox</title>
+  <defs>
+    <radialGradient id="fox_body" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ff8833"/>
+      <stop offset="100%" stop-color="#cc4400"/>
+    </radialGradient>
+    <radialGradient id="fox_belly" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#ffe0c0"/>
+    </radialGradient>
+    <radialGradient id="fox_eye" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#88cc00"/>
+      <stop offset="100%" stop-color="#446600"/>
+    </radialGradient>
+  </defs>
+  <!-- Tail base -->
+  <path d="M340,380 Q430,320 450,240 Q460,185 435,165 Q410,148 390,175 Q365,210 360,260 Q355,300 350,350" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Tail white tip -->
+  <ellipse cx="438" cy="168" rx="28" ry="22" fill="url(#fox_belly)" stroke="#1a1a2e" stroke-width="3" transform="rotate(-30,438,168)"/>
+  <!-- Body -->
+  <ellipse cx="256" cy="340" rx="112" ry="112" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Belly white -->
+  <ellipse cx="256" cy="360" rx="68" ry="78" fill="url(#fox_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="256" cy="205" r="88" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Ears (pointy) -->
+  <polygon points="200,148 170,78 235,130" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <polygon points="312,148 342,78 277,130" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Inner ears -->
+  <polygon points="200,142 178,95 228,130" fill="#ff6644" stroke="none"/>
+  <polygon points="312,142 334,95 284,130" fill="#ff6644" stroke="none"/>
+  <!-- Face white patch -->
+  <ellipse cx="256" cy="232" rx="60" ry="50" fill="url(#fox_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Eyes -->
+  <ellipse cx="222" cy="198" rx="20" ry="20" fill="url(#fox_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="290" cy="198" rx="20" ry="20" fill="url(#fox_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="222" cy="198" rx="9" ry="11" fill="#1a1a2e"/>
+  <ellipse cx="290" cy="198" rx="9" ry="11" fill="#1a1a2e"/>
+  <circle cx="217" cy="193" r="5" fill="white"/>
+  <circle cx="285" cy="193" r="5" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="256" cy="225" rx="12" ry="9" fill="#1a1a2e"/>
+  <ellipse cx="252" cy="222" rx="4" ry="2.5" fill="white" opacity="0.5"/>
+  <!-- Mouth -->
+  <path d="M244,234 Q250,244 256,234" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M268,234 Q262,244 256,234" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Whiskers -->
+  <line x1="218" y1="228" x2="160" y2="220" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="218" y1="234" x2="160" y2="234" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="294" y1="228" x2="352" y2="220" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="294" y1="234" x2="352" y2="234" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <!-- Paws -->
+  <ellipse cx="210" cy="448" rx="38" ry="20" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="302" cy="448" rx="38" ry="20" fill="url(#fox_body)" stroke="#1a1a2e" stroke-width="3"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Pin</title>
+  <defs>
+    <radialGradient id="pin_head" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ff6666"/>
+      <stop offset="100%" stop-color="#cc0000"/>
+    </radialGradient>
+    <linearGradient id="pin_shaft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cccccc"/>
+      <stop offset="40%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#aaaaaa"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </linearGradient>
+  </defs>
+  <!-- Shadow -->
+  <ellipse cx="256" cy="456" rx="28" ry="8" fill="#1a1a2e" opacity="0.18"/>
+  <!-- Pin shaft -->
+  <rect x="248" y="200" width="16" height="255" rx="6" fill="url(#pin_shaft)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Pin tip -->
+  <polygon points="256,460 246,445 266,445" fill="#bbbbbb" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Pin head (large round) -->
+  <circle cx="256" cy="152" r="68" fill="url(#pin_head)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Head highlight -->
+  <ellipse cx="235" cy="130" rx="22" ry="15" fill="white" opacity="0.45" transform="rotate(-20,235,130)"/>
+  <!-- Head secondary shine -->
+  <circle cx="270" cy="165" r="8" fill="white" opacity="0.25"/>
+</svg>

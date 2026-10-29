@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Flag</title>
+  <defs>
+    <linearGradient id="flag_pennant" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4488"/>
+      <stop offset="50%" stop-color="#aa22dd"/>
+      <stop offset="100%" stop-color="#4422cc"/>
+    </linearGradient>
+    <linearGradient id="flag_pole" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#888888"/>
+      <stop offset="40%" stop-color="#eeeeee"/>
+      <stop offset="100%" stop-color="#666666"/>
+    </linearGradient>
+  </defs>
+  <!-- Pole shadow -->
+  <ellipse cx="162" cy="456" rx="14" ry="6" fill="#1a1a2e" opacity="0.2"/>
+  <!-- Pole base -->
+  <ellipse cx="162" cy="448" rx="18" ry="10" fill="#aaaaaa" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Pole -->
+  <rect x="154" y="100" width="16" height="355" rx="7" fill="url(#flag_pole)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Pole top ball -->
+  <circle cx="162" cy="100" r="14" fill="#ffdd00" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="157" cy="95" r="5" fill="white" opacity="0.5"/>
+  <!-- Pennant flag -->
+  <path d="M170,120 L420,195 L170,270 Z" fill="url(#flag_pennant)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Flag stripes -->
+  <path d="M170,155 L365,200 L170,215 Z" fill="white" opacity="0.15"/>
+  <!-- Stars on flag -->
+  <polygon points="300,175 307,195 328,195 311,207 318,227 300,215 282,227 289,207 272,195 293,195" fill="#ffee44" stroke="#1a1a2e" stroke-width="2" opacity="0.9"/>
+  <!-- Small star 1 -->
+  <polygon points="220,155 223,163 232,163 225,168 228,177 220,172 212,177 215,168 208,163 217,163" fill="white" opacity="0.7"/>
+  <!-- Small star 2 -->
+  <polygon points="380,205 383,213 392,213 385,218 388,227 380,222 372,227 375,218 368,213 377,213" fill="white" opacity="0.7"/>
+  <!-- Planet circle decoration -->
+  <circle cx="240" cy="220" r="18" fill="none" stroke="#ffee44" stroke-width="2.5" opacity="0.7"/>
+  <ellipse cx="240" cy="220" rx="26" ry="8" fill="none" stroke="#ffee44" stroke-width="2" opacity="0.7"/>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Cat</title>
+  <defs>
+    <radialGradient id="cat_body" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffaa44"/>
+      <stop offset="100%" stop-color="#e07820"/>
+    </radialGradient>
+    <radialGradient id="cat_belly" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffe0b0"/>
+      <stop offset="100%" stop-color="#ffcc88"/>
+    </radialGradient>
+    <radialGradient id="cat_eye" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#88ee44"/>
+      <stop offset="100%" stop-color="#228800"/>
+    </radialGradient>
+  </defs>
+  <!-- Body -->
+  <ellipse cx="256" cy="330" rx="110" ry="120" fill="url(#cat_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Belly -->
+  <ellipse cx="256" cy="350" rx="65" ry="75" fill="url(#cat_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Stripes on body -->
+  <line x1="220" y1="280" x2="210" y2="320" stroke="#c06010" stroke-width="3" stroke-linecap="round"/>
+  <line x1="256" y1="275" x2="256" y2="315" stroke="#c06010" stroke-width="3" stroke-linecap="round"/>
+  <line x1="292" y1="280" x2="302" y2="320" stroke="#c06010" stroke-width="3" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="256" cy="210" r="90" fill="url(#cat_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Ears -->
+  <polygon points="175,155 155,95 215,140" fill="url(#cat_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <polygon points="337,155 357,95 297,140" fill="url(#cat_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Inner ears -->
+  <polygon points="178,150 163,105 208,138" fill="#ff9999" stroke="none"/>
+  <polygon points="334,150 349,105 304,138" fill="#ff9999" stroke="none"/>
+  <!-- Face patch -->
+  <ellipse cx="256" cy="230" rx="55" ry="45" fill="url(#cat_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Eyes -->
+  <ellipse cx="225" cy="200" rx="22" ry="22" fill="url(#cat_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="287" cy="200" rx="22" ry="22" fill="url(#cat_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Pupils -->
+  <ellipse cx="225" cy="200" rx="9" ry="13" fill="#1a1a2e"/>
+  <ellipse cx="287" cy="200" rx="9" ry="13" fill="#1a1a2e"/>
+  <!-- Eye shine -->
+  <circle cx="220" cy="194" r="5" fill="white"/>
+  <circle cx="282" cy="194" r="5" fill="white"/>
+  <!-- Nose -->
+  <polygon points="256,228 248,238 264,238" fill="#ff6688" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Mouth -->
+  <path d="M248,238 Q240,252 232,248" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M264,238 Q272,252 280,248" stroke="#1a1a2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Whiskers -->
+  <line x1="220" y1="235" x2="155" y2="225" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="220" y1="242" x2="155" y2="242" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="220" y1="249" x2="155" y2="259" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="292" y1="235" x2="357" y2="225" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="292" y1="242" x2="357" y2="242" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="292" y1="249" x2="357" y2="259" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tail -->
+  <path d="M350,390 Q430,350 440,290 Q450,230 400,210 Q370,200 360,220" fill="none" stroke="url(#cat_body)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M350,390 Q430,350 440,290 Q450,230 400,210 Q370,200 360,220" fill="none" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Tail stripe -->
+  <path d="M390,240 Q410,260 420,280" fill="none" stroke="#c06010" stroke-width="5" stroke-linecap="round"/>
+  <path d="M400,265 Q415,282 418,302" fill="none" stroke="#c06010" stroke-width="5" stroke-linecap="round"/>
+  <!-- Paws -->
+  <ellipse cx="210" cy="445" rx="38" ry="22" fill="url(#cat_body)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="302" cy="445" rx="38" ry="22" fill="url(#cat_body)" stroke="#1a1a2e" stroke-width="3"/>
+</svg>

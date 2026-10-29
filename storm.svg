@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Storm</title>
+  <defs>
+    <radialGradient id="storm_cloud" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#7788aa"/>
+      <stop offset="100%" stop-color="#334466"/>
+    </radialGradient>
+    <linearGradient id="storm_bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffee44"/>
+      <stop offset="100%" stop-color="#ffaa00"/>
+    </linearGradient>
+  </defs>
+  <!-- Cloud body -->
+  <circle cx="180" cy="230" r="72" fill="url(#storm_cloud)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <circle cx="256" cy="200" r="88" fill="url(#storm_cloud)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <circle cx="332" cy="225" r="70" fill="url(#storm_cloud)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <rect x="150" y="230" width="212" height="80" rx="0" fill="url(#storm_cloud)"/>
+  <!-- Flat bottom of cloud -->
+  <rect x="148" y="280" width="216" height="32" rx="8" fill="url(#storm_cloud)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Cloud top unify - cover joins -->
+  <rect x="150" y="200" width="212" height="90" fill="url(#storm_cloud)"/>
+  <rect x="148" y="268" width="216" height="8" fill="#334466"/>
+  <!-- Lightning bolt -->
+  <polygon points="272,295 244,370 262,370 238,445 292,355 270,355 300,295" fill="url(#storm_bolt)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Rain drops left -->
+  <ellipse cx="168" cy="360" rx="6" ry="12" fill="#66aaff" stroke="#1a1a2e" stroke-width="2"/>
+  <ellipse cx="155" cy="390" rx="6" ry="12" fill="#66aaff" stroke="#1a1a2e" stroke-width="2"/>
+  <ellipse cx="175" cy="418" rx="5" ry="10" fill="#66aaff" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Rain drops right -->
+  <ellipse cx="350" cy="355" rx="6" ry="12" fill="#66aaff" stroke="#1a1a2e" stroke-width="2"/>
+  <ellipse cx="338" cy="385" rx="6" ry="12" fill="#66aaff" stroke="#1a1a2e" stroke-width="2"/>
+  <ellipse cx="358" cy="415" rx="5" ry="10" fill="#66aaff" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Cloud outline (redraw top) -->
+  <path d="M150,308 Q108,285 108,230 Q108,168 180,162 Q195,130 256,112 Q330,112 350,158 Q402,162 402,225 Q402,280 362,308 Z" fill="none" stroke="#1a1a2e" stroke-width="3.5"/>
+</svg>

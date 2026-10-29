@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Dog</title>
+  <defs>
+    <radialGradient id="dog_body" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c8854a"/>
+      <stop offset="100%" stop-color="#8b5a2b"/>
+    </radialGradient>
+    <radialGradient id="dog_belly" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f0d4a0"/>
+      <stop offset="100%" stop-color="#ddb870"/>
+    </radialGradient>
+    <radialGradient id="dog_eye" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#664400"/>
+      <stop offset="100%" stop-color="#331100"/>
+    </radialGradient>
+  </defs>
+  <!-- Body -->
+  <ellipse cx="256" cy="340" rx="115" ry="115" fill="url(#dog_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Belly -->
+  <ellipse cx="256" cy="360" rx="68" ry="72" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Tail (wagging) -->
+  <path d="M360,320 Q420,270 440,210 Q450,175 430,165 Q410,155 395,185 Q380,215 380,240" fill="url(#dog_body)" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="256" cy="205" r="92" fill="url(#dog_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Ear left (floppy) -->
+  <ellipse cx="185" cy="215" rx="38" ry="58" fill="#7a4520" stroke="#1a1a2e" stroke-width="3.5" transform="rotate(-15,185,215)"/>
+  <!-- Ear right (floppy) -->
+  <ellipse cx="327" cy="215" rx="38" ry="58" fill="#7a4520" stroke="#1a1a2e" stroke-width="3.5" transform="rotate(15,327,215)"/>
+  <!-- Muzzle -->
+  <ellipse cx="256" cy="238" rx="58" ry="44" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Eyes -->
+  <circle cx="222" cy="192" r="22" fill="url(#dog_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="290" cy="192" r="22" fill="url(#dog_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="216" cy="186" r="7" fill="white"/>
+  <circle cx="284" cy="186" r="7" fill="white"/>
+  <circle cx="228" cy="188" r="4" fill="white" opacity="0.6"/>
+  <circle cx="296" cy="188" r="4" fill="white" opacity="0.6"/>
+  <!-- Nose -->
+  <ellipse cx="256" cy="224" rx="18" ry="12" fill="#1a1a2e" stroke="#1a1a2e" stroke-width="2"/>
+  <ellipse cx="252" cy="220" rx="5" ry="3" fill="white" opacity="0.5"/>
+  <!-- Mouth smile -->
+  <path d="M238,236 Q256,258 274,236" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Tongue -->
+  <ellipse cx="256" cy="258" rx="18" ry="22" fill="#ff6688" stroke="#1a1a2e" stroke-width="2.5"/>
+  <line x1="256" y1="248" x2="256" y2="278" stroke="#cc3355" stroke-width="2"/>
+  <!-- Paws -->
+  <ellipse cx="205" cy="450" rx="42" ry="24" fill="url(#dog_body)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="307" cy="450" rx="42" ry="24" fill="url(#dog_body)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Paw toes -->
+  <circle cx="188" cy="444" r="7" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <circle cx="205" cy="440" r="7" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <circle cx="222" cy="444" r="7" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <circle cx="290" cy="444" r="7" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <circle cx="307" cy="440" r="7" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <circle cx="324" cy="444" r="7" fill="url(#dog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+</svg>

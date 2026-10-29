@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Bug</title>
+  <defs>
+    <radialGradient id="bug_shell" cx="40%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#88dd44"/>
+      <stop offset="100%" stop-color="#336600"/>
+    </radialGradient>
+    <radialGradient id="bug_head" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#aae855"/>
+      <stop offset="100%" stop-color="#4a8800"/>
+    </radialGradient>
+    <radialGradient id="bug_eye" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#88eeff"/>
+      <stop offset="100%" stop-color="#2266cc"/>
+    </radialGradient>
+  </defs>
+  <!-- Shadow -->
+  <ellipse cx="256" cy="445" rx="95" ry="14" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Legs left -->
+  <line x1="200" y1="310" x2="140" y2="285" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="195" y1="335" x2="130" y2="330" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="200" y1="360" x2="138" y2="375" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round"/>
+  <!-- Legs right -->
+  <line x1="312" y1="310" x2="372" y2="285" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="317" y1="335" x2="382" y2="330" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="312" y1="360" x2="374" y2="375" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round"/>
+  <!-- Shell body -->
+  <ellipse cx="256" cy="355" rx="100" ry="105" fill="url(#bug_shell)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Shell shine -->
+  <ellipse cx="230" cy="300" rx="28" ry="18" fill="white" opacity="0.35" transform="rotate(-20,230,300)"/>
+  <!-- Shell dividing line -->
+  <line x1="256" y1="255" x2="256" y2="455" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Spots -->
+  <circle cx="222" cy="310" r="16" fill="#1a1a2e"/>
+  <circle cx="290" cy="310" r="16" fill="#1a1a2e"/>
+  <circle cx="215" cy="360" r="13" fill="#1a1a2e"/>
+  <circle cx="297" cy="360" r="13" fill="#1a1a2e"/>
+  <circle cx="228" cy="406" r="10" fill="#1a1a2e"/>
+  <circle cx="284" cy="406" r="10" fill="#1a1a2e"/>
+  <!-- Head -->
+  <circle cx="256" cy="225" r="72" fill="url(#bug_head)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Antennae -->
+  <line x1="230" y1="162" x2="195" y2="115" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="192" cy="110" r="9" fill="#ffdd00" stroke="#1a1a2e" stroke-width="3"/>
+  <line x1="282" y1="162" x2="317" y2="115" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="320" cy="110" r="9" fill="#ffdd00" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Eyes -->
+  <circle cx="226" cy="218" r="22" fill="url(#bug_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="286" cy="218" r="22" fill="url(#bug_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="226" cy="218" r="11" fill="#1a1a2e"/>
+  <circle cx="286" cy="218" r="11" fill="#1a1a2e"/>
+  <circle cx="221" cy="213" r="5" fill="white"/>
+  <circle cx="281" cy="213" r="5" fill="white"/>
+  <!-- Smile -->
+  <path d="M232,248 Q256,264 280,248" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

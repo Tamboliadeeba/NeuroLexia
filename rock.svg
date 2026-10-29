@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Rock</title>
+  <defs>
+    <radialGradient id="rock_main" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#aaaaaa"/>
+      <stop offset="100%" stop-color="#555566"/>
+    </radialGradient>
+    <radialGradient id="rock_shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#888899"/>
+      <stop offset="100%" stop-color="#444455"/>
+    </radialGradient>
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse cx="256" cy="430" rx="145" ry="20" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Rock shape (irregular boulder) -->
+  <path d="M145,420 Q110,380 115,330 Q120,270 155,230 Q195,188 256,185 Q318,183 360,218 Q400,255 402,315 Q404,375 368,412 Q330,445 256,448 Q182,450 145,420 Z" fill="url(#rock_main)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Rock darker shadow side -->
+  <path d="M360,218 Q400,255 402,315 Q404,375 368,412 Q330,445 256,448 Q310,440 345,408 Q378,370 375,310 Q372,255 340,222 Z" fill="url(#rock_shadow)" opacity="0.5"/>
+  <!-- Highlight top -->
+  <ellipse cx="220" cy="240" rx="55" ry="30" fill="white" opacity="0.22" transform="rotate(-20,220,240)"/>
+  <!-- Mossy patches -->
+  <ellipse cx="180" cy="350" rx="28" ry="18" fill="#558844" opacity="0.55" stroke="#336622" stroke-width="1.5"/>
+  <ellipse cx="310" cy="400" rx="22" ry="14" fill="#558844" opacity="0.55" stroke="#336622" stroke-width="1.5"/>
+  <ellipse cx="240" cy="410" rx="18" ry="12" fill="#66aa44" opacity="0.5" stroke="#336622" stroke-width="1.5"/>
+  <!-- Crack lines -->
+  <path d="M255,230 Q265,280 258,330" stroke="#444455" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M310,270 Q295,300 300,340" stroke="#444455" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M180,295 Q200,320 190,360" stroke="#444455" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+</svg>

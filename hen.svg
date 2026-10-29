@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Hen</title>
+  <defs>
+    <radialGradient id="hen_body" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ee4444"/>
+      <stop offset="100%" stop-color="#aa1111"/>
+    </radialGradient>
+    <radialGradient id="hen_wing" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff7777"/>
+      <stop offset="100%" stop-color="#cc2222"/>
+    </radialGradient>
+  </defs>
+  <!-- Shadow -->
+  <ellipse cx="256" cy="455" rx="105" ry="16" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Body -->
+  <ellipse cx="256" cy="340" rx="120" ry="105" fill="url(#hen_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Wing left -->
+  <ellipse cx="175" cy="335" rx="55" ry="75" fill="url(#hen_wing)" stroke="#1a1a2e" stroke-width="3" transform="rotate(-20,175,335)"/>
+  <!-- Wing left white tips -->
+  <ellipse cx="162" cy="385" rx="28" ry="18" fill="white" stroke="#1a1a2e" stroke-width="2" transform="rotate(-20,162,385)"/>
+  <!-- Wing right -->
+  <ellipse cx="337" cy="335" rx="55" ry="75" fill="url(#hen_wing)" stroke="#1a1a2e" stroke-width="3" transform="rotate(20,337,335)"/>
+  <!-- Wing right white tips -->
+  <ellipse cx="350" cy="385" rx="28" ry="18" fill="white" stroke="#1a1a2e" stroke-width="2" transform="rotate(20,350,385)"/>
+  <!-- Tail feathers -->
+  <ellipse cx="360" cy="290" rx="30" ry="50" fill="url(#hen_body)" stroke="#1a1a2e" stroke-width="3" transform="rotate(30,360,290)"/>
+  <ellipse cx="375" cy="285" rx="22" ry="42" fill="#ff8866" stroke="#1a1a2e" stroke-width="2.5" transform="rotate(50,375,285)"/>
+  <!-- Head -->
+  <circle cx="256" cy="210" r="75" fill="url(#hen_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Comb -->
+  <path d="M238,142 Q248,120 256,138 Q264,118 272,138 Q280,120 290,140" fill="#ff2222" stroke="#1a1a2e" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Wattle -->
+  <ellipse cx="256" cy="270" rx="20" ry="14" fill="#ff3333" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Beak -->
+  <polygon points="256,235 232,250 256,262 280,250" fill="#ffcc00" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Eyes -->
+  <circle cx="228" cy="200" r="18" fill="white" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="284" cy="200" r="18" fill="white" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="228" cy="200" r="10" fill="#1a1a2e"/>
+  <circle cx="284" cy="200" r="10" fill="#1a1a2e"/>
+  <circle cx="224" cy="196" r="4" fill="white"/>
+  <circle cx="280" cy="196" r="4" fill="white"/>
+  <!-- Feet -->
+  <line x1="220" y1="440" x2="210" y2="455" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="210" y1="455" x2="190" y2="458" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="210" y1="455" x2="210" y2="470" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="210" y1="455" x2="228" y2="468" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="292" y1="440" x2="302" y2="455" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="302" y1="455" x2="322" y2="458" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="302" y1="455" x2="302" y2="470" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+  <line x1="302" y1="455" x2="284" y2="468" stroke="#ffcc00" stroke-width="5" stroke-linecap="round"/>
+</svg>

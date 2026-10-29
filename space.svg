@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Space</title>
+  <defs>
+    <radialGradient id="space_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a2a5e"/>
+      <stop offset="100%" stop-color="#050a1a"/>
+    </radialGradient>
+    <radialGradient id="space_planet" cx="38%" cy="35%" r="62%">
+      <stop offset="0%" stop-color="#cc88ff"/>
+      <stop offset="100%" stop-color="#6622aa"/>
+    </radialGradient>
+    <linearGradient id="space_ring" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffcc66"/>
+      <stop offset="50%" stop-color="#ffaa33"/>
+      <stop offset="100%" stop-color="#cc6600"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle (space) -->
+  <circle cx="256" cy="256" r="235" fill="url(#space_bg)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Stars scattered -->
+  <circle cx="120" cy="100" r="4" fill="white"/>
+  <circle cx="390" cy="90" r="3" fill="white"/>
+  <circle cx="450" cy="180" r="4" fill="white"/>
+  <circle cx="80" cy="320" r="3" fill="white"/>
+  <circle cx="430" cy="380" r="4" fill="white"/>
+  <circle cx="155" cy="430" r="3" fill="white"/>
+  <circle cx="350" cy="440" r="3" fill="white"/>
+  <circle cx="100" cy="210" r="2" fill="white"/>
+  <circle cx="420" cy="260" r="2" fill="white"/>
+  <circle cx="180" cy="150" r="2" fill="white"/>
+  <circle cx="340" cy="130" r="3" fill="white"/>
+  <circle cx="470" cy="290" r="2" fill="white"/>
+  <circle cx="70" cy="390" r="2" fill="white"/>
+  <!-- Planet shadow behind rings -->
+  <ellipse cx="256" cy="300" rx="200" ry="24" fill="#1a0033" opacity="0.5"/>
+  <!-- Ring back half -->
+  <ellipse cx="256" cy="280" rx="200" ry="28" fill="none" stroke="url(#space_ring)" stroke-width="16" stroke-dasharray="630 0" stroke-dashoffset="0" opacity="0.6"/>
+  <!-- Planet body -->
+  <circle cx="256" cy="240" r="130" fill="url(#space_planet)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Planet surface bands -->
+  <ellipse cx="256" cy="220" rx="118" ry="20" fill="#aa66ff" opacity="0.4"/>
+  <ellipse cx="256" cy="260" rx="118" ry="15" fill="#9944ee" opacity="0.4"/>
+  <!-- Planet highlight -->
+  <ellipse cx="215" cy="188" rx="38" ry="24" fill="white" opacity="0.3" transform="rotate(-20,215,188)"/>
+  <!-- Ring front half -->
+  <path d="M56,280 Q256,308 456,280" fill="none" stroke="url(#space_ring)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M56,280 Q256,308 456,280" fill="none" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Small moon -->
+  <circle cx="415" cy="150" r="30" fill="#cccccc" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="405" cy="143" r="8" fill="#aaaaaa"/>
+  <circle cx="420" cy="158" r="5" fill="#aaaaaa"/>
+</svg>

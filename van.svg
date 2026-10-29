@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Van</title>
+  <defs>
+    <linearGradient id="van_body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4499ff"/>
+      <stop offset="100%" stop-color="#1155cc"/>
+    </linearGradient>
+    <linearGradient id="van_roof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#66aaff"/>
+      <stop offset="100%" stop-color="#3377dd"/>
+    </linearGradient>
+    <radialGradient id="van_wheel" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#555555"/>
+      <stop offset="70%" stop-color="#222222"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </radialGradient>
+    <radialGradient id="van_window" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#aaddff"/>
+      <stop offset="100%" stop-color="#5599cc"/>
+    </radialGradient>
+  </defs>
+  <!-- Shadow -->
+  <ellipse cx="256" cy="430" rx="185" ry="18" fill="#1a1a2e" opacity="0.18"/>
+  <!-- Main body -->
+  <rect x="75" y="260" width="362" height="155" rx="18" fill="url(#van_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Cab/roof section -->
+  <path d="M310,260 L310,175 Q310,158 295,155 L195,155 Q145,155 120,175 L75,260 Z" fill="url(#van_roof)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Body highlight -->
+  <rect x="90" y="275" width="340" height="18" rx="5" fill="white" opacity="0.2"/>
+  <!-- Windshield -->
+  <path d="M130,258 L160,168 L295,168 L310,258 Z" fill="url(#van_window)" stroke="#1a1a2e" stroke-width="3"/>
+  <line x1="225" y1="168" x2="220" y2="258" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Side windows -->
+  <rect x="330" y="275" width="75" height="58" rx="8" fill="url(#van_window)" stroke="#1a1a2e" stroke-width="3"/>
+  <rect x="330" y="278" width="72" height="15" rx="4" fill="white" opacity="0.3"/>
+  <!-- Side window 2 -->
+  <rect x="185" y="275" width="75" height="58" rx="8" fill="url(#van_window)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Door line -->
+  <line x1="310" y1="260" x2="310" y2="415" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Door handle -->
+  <rect x="292" y="345" width="22" height="8" rx="4" fill="#aaaaaa" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Front bumper -->
+  <rect x="70" y="388" width="62" height="22" rx="8" fill="#aabbcc" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Headlight -->
+  <rect x="78" y="295" width="38" height="24" rx="6" fill="#ffffaa" stroke="#1a1a2e" stroke-width="2.5"/>
+  <rect x="80" y="297" width="34" height="10" rx="3" fill="white" opacity="0.5"/>
+  <!-- Wheels -->
+  <circle cx="155" cy="415" r="48" fill="url(#van_wheel)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <circle cx="155" cy="415" r="28" fill="#444444" stroke="#888888" stroke-width="3"/>
+  <circle cx="155" cy="415" r="10" fill="#aaaaaa"/>
+  <circle cx="370" cy="415" r="48" fill="url(#van_wheel)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <circle cx="370" cy="415" r="28" fill="#444444" stroke="#888888" stroke-width="3"/>
+  <circle cx="370" cy="415" r="10" fill="#aaaaaa"/>
+</svg>
