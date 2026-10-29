@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Tar</title>
+  <defs>
+    <radialGradient id="tar_puddle" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <radialGradient id="tar_shine" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#666666" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#222222" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Tar blob / puddle shape -->
+  <path d="M256,155 Q320,148 365,175 Q415,205 428,260 Q440,315 415,358 Q395,395 356,408 Q310,428 256,425 Q202,428 156,408 Q117,395 97,358 Q72,315 84,260 Q97,205 147,175 Q192,148 256,155 Z" fill="url(#tar_puddle)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Small drip bumps on edge -->
+  <circle cx="256" cy="155" r="14" fill="url(#tar_puddle)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="365" cy="178" r="11" fill="url(#tar_puddle)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="97" cy="355" r="11" fill="url(#tar_puddle)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="415" cy="355" r="11" fill="url(#tar_puddle)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="148" cy="178" r="11" fill="url(#tar_puddle)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Shine reflection -->
+  <ellipse cx="222" cy="235" rx="60" ry="28" fill="url(#tar_shine)" transform="rotate(-20,222,235)"/>
+  <ellipse cx="310" cy="310" rx="30" ry="14" fill="white" opacity="0.08"/>
+  <!-- Bubble 1 -->
+  <circle cx="200" cy="310" r="18" fill="none" stroke="#444444" stroke-width="3"/>
+  <ellipse cx="194" cy="305" rx="6" ry="4" fill="white" opacity="0.2"/>
+  <!-- Bubble 2 -->
+  <circle cx="300" cy="360" r="13" fill="none" stroke="#444444" stroke-width="2.5"/>
+  <ellipse cx="295" cy="356" rx="4" ry="3" fill="white" opacity="0.2"/>
+  <!-- Bubble 3 small -->
+  <circle cx="320" cy="250" r="9" fill="none" stroke="#555555" stroke-width="2"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Bird</title>
+  <defs>
+    <radialGradient id="bird_body" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#55aaff"/>
+      <stop offset="100%" stop-color="#1166cc"/>
+    </radialGradient>
+    <radialGradient id="bird_wing" cx="40%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#77bbff"/>
+      <stop offset="100%" stop-color="#2255bb"/>
+    </radialGradient>
+    <radialGradient id="bird_eye" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eeeeff"/>
+    </radialGradient>
+  </defs>
+  <!-- Branch -->
+  <rect x="120" y="380" width="272" height="22" rx="10" fill="#8b5a2b" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Branch texture -->
+  <line x1="150" y1="380" x2="145" y2="402" stroke="#6b3a1b" stroke-width="2.5"/>
+  <line x1="220" y1="380" x2="215" y2="402" stroke="#6b3a1b" stroke-width="2.5"/>
+  <line x1="300" y1="380" x2="295" y2="402" stroke="#6b3a1b" stroke-width="2.5"/>
+  <!-- Tail feathers -->
+  <path d="M175,340 Q140,360 125,390" stroke="url(#bird_wing)" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M172,342 Q148,375 138,400" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M182,338 Q150,352 140,375" stroke="url(#bird_wing)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Body -->
+  <ellipse cx="256" cy="315" rx="95" ry="78" fill="url(#bird_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Wing -->
+  <ellipse cx="235" cy="310" rx="60" ry="42" fill="url(#bird_wing)" stroke="#1a1a2e" stroke-width="3" transform="rotate(-15,235,310)"/>
+  <!-- Wing feather tips -->
+  <path d="M190,325 Q200,345 220,348" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M185,315 Q193,338 212,342" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Belly white patch -->
+  <ellipse cx="265" cy="330" rx="42" ry="35" fill="white" opacity="0.35"/>
+  <!-- Head -->
+  <circle cx="295" cy="250" r="65" fill="url(#bird_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Head shine -->
+  <ellipse cx="278" cy="228" rx="18" ry="12" fill="white" opacity="0.35" transform="rotate(-20,278,228)"/>
+  <!-- Eye -->
+  <circle cx="315" cy="245" r="22" fill="url(#bird_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="315" cy="245" r="12" fill="#1a1a2e"/>
+  <circle cx="310" cy="240" r="5" fill="white"/>
+  <!-- Beak -->
+  <path d="M348,260 L378,250 L348,240 Z" fill="#ff8833" stroke="#1a1a2e" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Feet on branch -->
+  <line x1="240" y1="380" x2="235" y2="400" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="235" y1="400" x2="218" y2="398" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="235" y1="400" x2="228" y2="412" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="235" y1="400" x2="248" y2="410" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="270" y1="378" x2="272" y2="400" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="272" y1="400" x2="255" y2="398" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="272" y1="400" x2="265" y2="412" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+  <line x1="272" y1="400" x2="285" y2="410" stroke="#ffaa33" stroke-width="4" stroke-linecap="round"/>
+</svg>

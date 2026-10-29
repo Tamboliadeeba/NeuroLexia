@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Number Ten</title>
+  <defs>
+    <linearGradient id="ten_fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6644"/>
+      <stop offset="100%" stop-color="#cc2200"/>
+    </linearGradient>
+    <linearGradient id="ten_side" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#aa2200"/>
+      <stop offset="100%" stop-color="#882200"/>
+    </linearGradient>
+    <linearGradient id="ten_top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9977"/>
+      <stop offset="100%" stop-color="#ee4422"/>
+    </linearGradient>
+  </defs>
+  <!-- 3D "1" digit -->
+  <!-- 1 - right side depth -->
+  <polygon points="162,390 182,390 182,145 162,145" fill="url(#ten_side)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- 1 - top depth -->
+  <polygon points="102,145 162,145 182,145 122,145" fill="url(#ten_top)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- 1 main face -->
+  <rect x="102" y="145" width="60" height="245" rx="6" fill="url(#ten_fill)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- 1 serif top bar -->
+  <rect x="82" y="145" width="100" height="32" rx="8" fill="url(#ten_fill)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- 1 serif top depth -->
+  <polygon points="182,145 202,145 202,177 182,177" fill="url(#ten_side)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- 1 bottom serif -->
+  <rect x="78" y="358" width="110" height="32" rx="8" fill="url(#ten_fill)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- 3D "0" digit -->
+  <!-- 0 - outer shape depth/side -->
+  <ellipse cx="355" cy="268" rx="90" ry="118" fill="url(#ten_side)" stroke="#1a1a2e" stroke-width="2" transform="translate(20,0)"/>
+  <!-- 0 front ellipse -->
+  <ellipse cx="355" cy="268" rx="90" ry="118" fill="url(#ten_fill)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- 0 hole depth -->
+  <ellipse cx="375" cy="268" rx="44" ry="62" fill="url(#ten_side)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- 0 hole front -->
+  <ellipse cx="355" cy="268" rx="44" ry="62" fill="white" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Highlight on 1 -->
+  <rect x="110" y="158" width="12" height="200" rx="4" fill="white" opacity="0.25"/>
+  <!-- Highlight on 0 -->
+  <ellipse cx="328" cy="218" rx="18" ry="30" fill="white" opacity="0.3" transform="rotate(-15,328,218)"/>
+</svg>

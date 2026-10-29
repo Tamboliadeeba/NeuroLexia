@@ -1,0 +1,214 @@
+// Prisma schema for NeuroLexia
+// Run: npx prisma migrate dev --name init  (from the server/ directory)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum Language {
+  en
+  hi
+}
+
+enum FontPreference {
+  opendyslexic
+  atkinson
+  default
+}
+
+enum GameType {
+  trip_to_space
+  echo_galaxy
+  astrotales
+  word_orbit
+  math_mission
+}
+
+enum UnlockType {
+  planet
+  theme
+}
+
+// ─── users (parents) ──────────────────────────────────────────────────────────
+
+model User {
+  id                String    @id @default(uuid())
+  email             String    @unique
+  password_hash     String
+  name              String
+  preferred_language Language @default(en)
+  override_pin_hash String?
+  consent_given_at  DateTime?
+  created_at        DateTime  @default(now())
+
+  children  Child[]
+  ai_reports AiReport[]
+
+  @@map("users")
+}
+
+// ─── characters ───────────────────────────────────────────────────────────────
+
+model Character {
+  id             String @id @default(uuid())
+  name           String
+  key            String @unique
+  model_key      String
+  fallback_svg   String
+  tts_voice_hint String
+  description_en String
+  description_hi String
+
+  children Child[]
+
+  @@map("characters")
+}
+
+// ─── children ─────────────────────────────────────────────────────────────────
+
+model Child {
+  id                 String         @id @default(uuid())
+  parent_id          String
+  name               String
+  age                Int
+  username           String?        @unique
+  password_hash      String?
+  preferred_language Language       @default(en)
+  character_id       String?
+  preferred_font     FontPreference @default(opendyslexic)
+  total_points       Int            @default(0)
+  points_balance     Int            @default(0)
+  total_stars        Int            @default(0)
+  active_theme       String         @default("default")
+  is_demo            Boolean        @default(false)
+  created_at         DateTime       @default(now())
+
+  parent              User                @relation(fields: [parent_id], references: [id], onDelete: Cascade)
+  character           Character?          @relation(fields: [character_id], references: [id], onDelete: SetNull)
+  credentials         ChildCredential[]
+  webauthn_challenges WebAuthnChallenge[]
+  game_sessions       GameSession[]
+  game_progress       ChildGameProgress[]
+  unlocks             Unlock[]
+  ai_reports          AiReport[]
+
+  @@map("children")
+}
+
+// ─── child_credentials (WebAuthn) ─────────────────────────────────────────────
+
+model ChildCredential {
+  id            String   @id @default(uuid())
+  child_id      String
+  credential_id Bytes    @unique
+  public_key    Bytes
+  counter       BigInt
+  transports    String[]
+  created_at    DateTime @default(now())
+
+  child Child @relation(fields: [child_id], references: [id], onDelete: Cascade)
+
+  @@map("child_credentials")
+}
+
+// ─── webauthn_challenges ──────────────────────────────────────────────────────
+
+model WebAuthnChallenge {
+  id         String   @id @default(uuid())
+  child_id   String?
+  challenge  String
+  expires_at DateTime
+  created_at DateTime @default(now())
+
+  child Child? @relation(fields: [child_id], references: [id], onDelete: Cascade)
+
+  @@map("webauthn_challenges")
+}
+
+// ─── game_sessions ────────────────────────────────────────────────────────────
+
+model GameSession {
+  id                String   @id @default(uuid())
+  child_id          String
+  game_type         GameType
+  client_session_id String
+  started_at        DateTime
+  ended_at          DateTime
+  level             Int
+  score             Int      @default(0)
+  points_earned     Int      @default(0)
+  stars_earned      Int      @default(0)
+  accuracy          Float?
+  attempts          Int      @default(0)
+  errors            Json     @default("{}")
+  self_reported_count Int    @default(0)
+  metadata          Json     @default("{}")
+
+  child Child @relation(fields: [child_id], references: [id], onDelete: Cascade)
+
+  @@unique([child_id, client_session_id])
+  @@map("game_sessions")
+}
+
+// ─── child_game_progress ──────────────────────────────────────────────────────
+
+model ChildGameProgress {
+  id            String   @id @default(uuid())
+  child_id      String
+  game_type     GameType
+  current_level Int      @default(1)
+  phase         Int      @default(1)
+  best_stars    Int      @default(0)
+  updated_at    DateTime @updatedAt
+
+  child Child @relation(fields: [child_id], references: [id], onDelete: Cascade)
+
+  @@unique([child_id, game_type])
+  @@map("child_game_progress")
+}
+
+// ─── unlocks ──────────────────────────────────────────────────────────────────
+
+model Unlock {
+  id          String     @id @default(uuid())
+  child_id    String
+  unlock_type UnlockType
+  unlock_key  String
+  unlocked_at DateTime   @default(now())
+
+  child Child @relation(fields: [child_id], references: [id], onDelete: Cascade)
+
+  @@unique([child_id, unlock_key])
+  @@map("unlocks")
+}
+
+// ─── ai_reports ───────────────────────────────────────────────────────────────
+
+model AiReport {
+  id           String   @id @default(uuid())
+  child_id     String
+  parent_id    String
+  generated_at DateTime @default(now())
+  period_start DateTime @db.Date
+  period_end   DateTime @db.Date
+  language     Language
+  report_text  String
+  summary      String?
+  weak_areas   String?
+  activities   String?
+  prompt_used  String
+  is_mock      Boolean  @default(false)
+  model_id     String?
+
+  child  Child @relation(fields: [child_id], references: [id], onDelete: Cascade)
+  parent User  @relation(fields: [parent_id], references: [id], onDelete: Cascade)
+
+  @@map("ai_reports")
+}

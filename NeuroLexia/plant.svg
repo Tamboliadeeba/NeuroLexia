@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Plant</title>
+  <defs>
+    <linearGradient id="plant_pot" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e07040"/>
+      <stop offset="100%" stop-color="#a04020"/>
+    </linearGradient>
+    <radialGradient id="plant_leaf" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#77dd44"/>
+      <stop offset="100%" stop-color="#228811"/>
+    </radialGradient>
+    <linearGradient id="plant_soil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a4a1a"/>
+      <stop offset="100%" stop-color="#4a2a08"/>
+    </linearGradient>
+  </defs>
+  <!-- Shadow -->
+  <ellipse cx="256" cy="455" rx="80" ry="15" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Pot body -->
+  <path d="M180,370 L168,440 Q168,455 185,455 L327,455 Q344,455 344,440 L332,370 Z" fill="url(#plant_pot)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Pot highlight -->
+  <path d="M188,378 Q185,415 183,445" stroke="white" stroke-width="8" opacity="0.2" stroke-linecap="round" fill="none"/>
+  <!-- Pot rim -->
+  <rect x="172" y="360" width="168" height="22" rx="9" fill="#e88048" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Soil -->
+  <ellipse cx="256" cy="370" rx="78" ry="15" fill="url(#plant_soil)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Stem main -->
+  <line x1="256" y1="370" x2="256" y2="240" stroke="#228811" stroke-width="9" stroke-linecap="round"/>
+  <!-- Stem left branch -->
+  <path d="M256,300 Q210,270 195,235" stroke="#228811" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Stem right branch -->
+  <path d="M256,280 Q302,250 318,215" stroke="#228811" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Stem outline -->
+  <line x1="256" y1="370" x2="256" y2="240" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left leaf -->
+  <ellipse cx="188" cy="228" rx="58" ry="38" fill="url(#plant_leaf)" stroke="#1a1a2e" stroke-width="3" transform="rotate(-35,188,228)"/>
+  <line x1="215" y1="248" x2="162" y2="210" stroke="#1a5a08" stroke-width="2" opacity="0.6"/>
+  <!-- Right leaf -->
+  <ellipse cx="325" cy="205" rx="58" ry="38" fill="url(#plant_leaf)" stroke="#1a1a2e" stroke-width="3" transform="rotate(30,325,205)"/>
+  <line x1="298" y1="222" x2="352" y2="188" stroke="#1a5a08" stroke-width="2" opacity="0.6"/>
+  <!-- Top center leaf -->
+  <ellipse cx="256" cy="215" rx="48" ry="62" fill="url(#plant_leaf)" stroke="#1a1a2e" stroke-width="3" transform="rotate(5,256,215)"/>
+  <line x1="256" y1="278" x2="256" y2="170" stroke="#1a5a08" stroke-width="2" opacity="0.6"/>
+  <!-- Leaf highlights -->
+  <ellipse cx="174" cy="218" rx="18" ry="10" fill="white" opacity="0.3" transform="rotate(-35,174,218)"/>
+  <ellipse cx="316" cy="195" rx="18" ry="10" fill="white" opacity="0.3" transform="rotate(30,316,195)"/>
+  <ellipse cx="248" cy="200" rx="15" ry="22" fill="white" opacity="0.25"/>
+</svg>

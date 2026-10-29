@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Moon</title>
+  <defs>
+    <radialGradient id="moon_fill" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff9c4"/>
+      <stop offset="60%" stop-color="#ffd740"/>
+      <stop offset="100%" stop-color="#f9a825"/>
+    </radialGradient>
+    <radialGradient id="moon_glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff176" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffd740" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Outer glow -->
+  <circle cx="270" cy="256" r="215" fill="url(#moon_glow)"/>
+  <!-- Crescent shape using clip -->
+  <defs>
+    <clipPath id="moon_clip">
+      <circle cx="270" cy="256" r="175"/>
+    </clipPath>
+  </defs>
+  <!-- Moon full circle -->
+  <circle cx="270" cy="256" r="175" fill="url(#moon_fill)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Cut out for crescent -->
+  <circle cx="335" cy="230" r="148" fill="#0d1b2a"/>
+  <!-- Redraw outline arc of crescent -->
+  <path d="M270,81 A175,175 0 1,0 270,431" fill="none" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Crescent inner curve outline -->
+  <path d="M270,81 A148,148 0 0,1 270,431" fill="none" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Face features on crescent -->
+  <!-- Sleepy left eye (closed) -->
+  <path d="M198,230 Q210,222 222,230" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Sleepy right eye (closed) -->
+  <path d="M175,265 Q185,257 195,265" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Eye lashes left -->
+  <line x1="202" y1="228" x2="199" y2="216" stroke="#1a1a2e" stroke-width="2.5"/>
+  <line x1="210" y1="224" x2="209" y2="212" stroke="#1a1a2e" stroke-width="2.5"/>
+  <line x1="218" y1="228" x2="217" y2="216" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Eye lashes right -->
+  <line x1="178" y1="263" x2="175" y2="251" stroke="#1a1a2e" stroke-width="2.5"/>
+  <line x1="185" y1="259" x2="184" y2="247" stroke="#1a1a2e" stroke-width="2.5"/>
+  <line x1="192" y1="263" x2="191" y2="251" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Smile -->
+  <path d="M185,300 Q205,316 228,308" stroke="#1a1a2e" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Rosy cheek -->
+  <ellipse cx="218" cy="295" rx="15" ry="9" fill="#ffaa44" opacity="0.4"/>
+  <!-- Small crater details -->
+  <circle cx="152" cy="180" r="12" fill="none" stroke="#f9a825" stroke-width="2" opacity="0.5"/>
+  <circle cx="178" cy="385" r="9" fill="none" stroke="#f9a825" stroke-width="2" opacity="0.5"/>
+</svg>

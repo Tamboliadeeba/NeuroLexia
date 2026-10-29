@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Frog</title>
+  <defs>
+    <radialGradient id="frog_body" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#66dd44"/>
+      <stop offset="100%" stop-color="#228811"/>
+    </radialGradient>
+    <radialGradient id="frog_belly" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ccffbb"/>
+      <stop offset="100%" stop-color="#88ee66"/>
+    </radialGradient>
+    <radialGradient id="frog_eye" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffee44"/>
+      <stop offset="100%" stop-color="#cc8800"/>
+    </radialGradient>
+  </defs>
+  <!-- Shadow -->
+  <ellipse cx="256" cy="455" rx="115" ry="16" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Back legs -->
+  <ellipse cx="170" cy="400" rx="55" ry="30" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3" transform="rotate(-25,170,400)"/>
+  <ellipse cx="342" cy="400" rx="55" ry="30" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3" transform="rotate(25,342,400)"/>
+  <!-- Feet left -->
+  <ellipse cx="135" cy="432" rx="40" ry="16" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3"/>
+  <!-- Toes left -->
+  <circle cx="108" cy="432" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <circle cx="126" cy="440" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <circle cx="148" cy="442" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <circle cx="166" cy="436" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Feet right -->
+  <ellipse cx="377" cy="432" rx="40" ry="16" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="350" cy="436" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <circle cx="364" cy="442" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <circle cx="386" cy="442" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <circle cx="404" cy="432" r="10" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Body -->
+  <ellipse cx="256" cy="340" rx="118" ry="105" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Belly -->
+  <ellipse cx="256" cy="355" rx="75" ry="72" fill="url(#frog_belly)" stroke="#1a1a2e" stroke-width="2"/>
+  <!-- Front arms -->
+  <ellipse cx="168" cy="360" rx="30" ry="48" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3" transform="rotate(15,168,360)"/>
+  <ellipse cx="344" cy="360" rx="30" ry="48" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3" transform="rotate(-15,344,360)"/>
+  <!-- Head -->
+  <ellipse cx="256" cy="225" rx="110" ry="90" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Eye bumps left -->
+  <circle cx="198" cy="168" r="35" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <circle cx="314" cy="168" r="35" fill="url(#frog_body)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Eyes -->
+  <circle cx="198" cy="165" r="25" fill="url(#frog_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="314" cy="165" r="25" fill="url(#frog_eye)" stroke="#1a1a2e" stroke-width="3"/>
+  <ellipse cx="198" cy="165" rx="10" ry="14" fill="#1a1a2e"/>
+  <ellipse cx="314" cy="165" rx="10" ry="14" fill="#1a1a2e"/>
+  <circle cx="193" cy="159" r="5" fill="white"/>
+  <circle cx="309" cy="159" r="5" fill="white"/>
+  <!-- Smile (wide) -->
+  <path d="M195,248 Q256,295 317,248" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Nose dots -->
+  <circle cx="244" cy="220" r="6" fill="#1a1a2e" opacity="0.5"/>
+  <circle cx="268" cy="220" r="6" fill="#1a1a2e" opacity="0.5"/>
+</svg>

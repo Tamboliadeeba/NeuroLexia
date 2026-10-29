@@ -1,0 +1,30 @@
+{
+  "name": "neurolexia",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "overrides": {
+    "@types/three": "0.167.0"
+  },
+  "scripts": {
+    "pg:start": "node scripts/pg-start.js",
+    "dev": "node scripts/dev.js",
+    "build": "npm run build --workspace=client && npm run build --workspace=server",
+    "test": "npm run test --workspace=shared --workspace=server --workspace=client --if-present"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^5.0.5",
+    "concurrently": "^8.2.2",
+    "vitest": "^5.0.5"
+  },
+  "allowScripts": {
+    "@prisma/client@5.22.0": true,
+    "prisma@5.22.0": true,
+    "@prisma/engines@5.22.0": true,
+    "esbuild@0.21.5": true
+  }
+}

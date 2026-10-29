@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Cartoon Sun</title>
+  <defs>
+    <radialGradient id="sun_core" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fff176"/>
+      <stop offset="60%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#ff8800"/>
+    </radialGradient>
+    <radialGradient id="sun_ray" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#ffdd00"/>
+      <stop offset="100%" stop-color="#ff9900"/>
+    </radialGradient>
+    <filter id="sun_glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Glow halo -->
+  <circle cx="256" cy="256" r="180" fill="#ffee44" opacity="0.18"/>
+  <!-- Rays (chunky rounded) -->
+  <g stroke="#1a1a2e" stroke-width="3" fill="url(#sun_ray)">
+    <!-- Top -->
+    <ellipse cx="256" cy="100" rx="18" ry="40" />
+    <!-- Top-right -->
+    <ellipse cx="356" cy="136" rx="18" ry="40" transform="rotate(45,356,136)"/>
+    <!-- Right -->
+    <ellipse cx="406" cy="256" rx="18" ry="40" transform="rotate(90,406,256)"/>
+    <!-- Bottom-right -->
+    <ellipse cx="376" cy="376" rx="18" ry="40" transform="rotate(135,376,376)"/>
+    <!-- Bottom -->
+    <ellipse cx="256" cy="412" rx="18" ry="40" transform="rotate(180,256,412)"/>
+    <!-- Bottom-left -->
+    <ellipse cx="136" cy="376" rx="18" ry="40" transform="rotate(225,136,376)"/>
+    <!-- Left -->
+    <ellipse cx="106" cy="256" rx="18" ry="40" transform="rotate(270,106,256)"/>
+    <!-- Top-left -->
+    <ellipse cx="156" cy="136" rx="18" ry="40" transform="rotate(315,156,136)"/>
+  </g>
+  <!-- Sun body -->
+  <circle cx="256" cy="256" r="130" fill="url(#sun_core)" stroke="#1a1a2e" stroke-width="3.5"/>
+  <!-- Shine highlight -->
+  <ellipse cx="215" cy="215" rx="35" ry="22" fill="white" opacity="0.35" transform="rotate(-30,215,215)"/>
+  <!-- Eyes -->
+  <ellipse cx="218" cy="248" rx="18" ry="20" fill="#1a1a2e"/>
+  <ellipse cx="294" cy="248" rx="18" ry="20" fill="#1a1a2e"/>
+  <circle cx="212" cy="242" r="6" fill="white"/>
+  <circle cx="288" cy="242" r="6" fill="white"/>
+  <!-- Happy eyebrows -->
+  <path d="M202,228 Q218,218 234,228" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M278,228 Q294,218 310,228" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Smile -->
+  <path d="M210,278 Q256,315 302,278" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Cheek blush -->
+  <ellipse cx="195" cy="278" rx="18" ry="10" fill="#ffaa44" opacity="0.5"/>
+  <ellipse cx="317" cy="278" rx="18" ry="10" fill="#ffaa44" opacity="0.5"/>
+</svg>
